@@ -1,6 +1,6 @@
 # twoPassAssembler
 
-This was a project done as part of system programming course at the University of Belgrade, faculty of Electrical engineering.
+This was a project done as part of system programming course at the University of Belgrade, faculty of Electrical engineering in 2017.
 
 ## Description
 
