@@ -1,0 +1,30 @@
+.data
+c DEF 100
+prom DEF 0x15
+DB 1, 2, 3
+dd 2 DUP c, 2 DUP prom + c
+DW 4+((36+5)-(5-28))
+DB a, 0x20
+.global prom
+
+.text_1
+a DEF 13
+LOADSB r1, [R2]
+b:LOAD R5, $20
+label1: LOAD r8, $a
+load r9, $prom
+load r10, label2
+load r11, label1
+load r10, $label2
+load r11, $label1
+
+.text_2
+CALL $a
+jmp b
+store r4, $0x2
+label2: CALL a
+
+ORG 0b100000-0x5+(44-33-(21+3))
+.bss
+DW 5 DUP ?
+.end
