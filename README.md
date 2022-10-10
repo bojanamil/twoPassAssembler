@@ -1,7 +1,3 @@
-# twoPassAssembler
-
-This was a project done as part of system programming course at the University of Belgrade, faculty of Electrical engineering in 2017.
-
 ## Description
 
 In the first pass (`FirstPass.cpp`) information was collected about symbols and segments from the input file, and storing them in the table of symbols. Information about symbol and segment is stored in classes Symbol and Segment respectively.  By storing this data, it was avoided to parse the input file multiple times, and the input file is parsed only once.
